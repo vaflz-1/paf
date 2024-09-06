@@ -1,0 +1,10 @@
+<scenarios>
+    <scenario name="DockerInstallationAndHelloWorld">
+        <phase name="InstallDockerPhase">
+            <task name="InstallDocker" module="docker_tasks" class="InstallDocker"/>
+        </phase>
+        <phase name="RunHelloWorldPhase">
+            <task name="RunHelloWorld" module="docker_tasks" class="RunHelloWorld"/>
+        </phase>
+    </scenario>
+</scenarios>
