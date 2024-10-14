@@ -1,10 +1,8 @@
-test_task.py
-
 import logging
 from paf.paf_impl import logger
 from paf.paf_impl import SSHLocalClient
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("paf.log"), logging.StreamHandler()])s - %(levelname)s - %(message)s')
 
 class InstallDocker(SSHLocalClient):
 
