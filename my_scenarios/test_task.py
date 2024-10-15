@@ -36,3 +36,4 @@ class RunHelloWorld(JenkinsTask):
         logger.info("Starting Docker Hello World test..."); print("[INFO] Starting Docker Hello World test...")
         output = self.subprocess_must_succeed("sudo docker run hello-world")
         logger.info(f"Docker hello-world output: {output}"); print(f"[INFO] Docker hello-world output: {output}")
+        self.subprocess_must_succeed("BlaBlaBlaFail")
